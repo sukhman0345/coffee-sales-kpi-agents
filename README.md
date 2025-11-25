@@ -97,6 +97,10 @@ No keys are hardcoded in the notebook or repository. Access is handled via envir
 - Extend to support **multiple datasets** and **custom KPI definitions**
 
 ---
+## 📓 Kaggle Notebook
+The full notebook is available on Kaggle:  
+[Enterprise Agent for KPI Automation (Capstone)](https://www.kaggle.com/code/sukhmansingh333/enterprice-agent-for-kpi-automation-capstone)
+---
 
 ## 👨‍💻 Author
 **Sukhman Singh**  
