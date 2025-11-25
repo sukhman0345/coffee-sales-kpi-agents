@@ -87,8 +87,6 @@ Each run produces:
 All API keys (e.g., Google AI Studio) are securely managed using **Kaggle Secrets**.  
 No keys are hardcoded in the notebook or repository. Access is handled via environment variables like `os.environ["GOOGLE_API_KEY"]`.
 
----
-
 
 ---
 
