@@ -1,69 +1,106 @@
-# coffee-sales-kpi-agents
-Multi-Agent KPI Automation for Coffee Sales Insights
+# ☕ coffee-sales-kpi-agents  
+**Multi-Agent KPI Automation for Coffee Sales Insights**
 
-# 📊 Multi-Agent KPI Automation for Coffee Sales Insights
+---
 
-## 🔹 Overview
-This project demonstrates how autonomous agents can automate KPI analysis for enterprise datasets.  
-Using a **coffee sales dataset**, we built a **multi-agent pipeline** that loads data, computes KPIs, generates LLM-powered summaries, and visualizes results — all with observability, memory, and deployment support.
+## 📊 Overview
+In fast-paced enterprise environments, transforming raw sales data into actionable insights is often slow, manual, and error-prone. This project tackles that challenge by building a **multi-agent system** that automates KPI analysis using a real-world **coffee sales dataset**.
+
+Our pipeline:
+- Loads and prepares the dataset  
+- Computes key performance indicators (KPIs)  
+- Generates human-readable summaries using **Gemini**  
+- Visualizes results with charts  
+- Supports **observability**, **memory**, and **deployment readiness**
 
 ---
 
 ## 🧩 Problem Statement
-In enterprise settings, transforming raw sales data into actionable insights is often slow, manual, and error-prone. Analysts spend hours cleaning data, calculating KPIs, and generating reports — a process that’s repetitive, fragile, and hard to scale.  
-Our dataset, based on coffee sales transactions, reflects this challenge: it contains valuable information, but extracting insights manually would be inefficient and inconsistent.
+Traditional KPI workflows are repetitive, fragile, and hard to scale. Analysts spend hours cleaning data, calculating metrics, and preparing reports — delaying decisions and reducing agility.
+
+Our dataset, based on coffee sales transactions, reflects this challenge. Extracting insights manually would be inefficient and inconsistent. We solve this with a modular, agent-driven system that automates the entire process.
 
 ---
 
 ## 🤖 Why Agents?
-Agents are the right solution because they bring:
-- **Autonomy** → Each agent specializes in a task.  
-- **Scalability** → Supports sequential, parallel, and loop execution.  
-- **Traceability** → Observability (logs, metrics) and memory persistence.  
-- **Flexibility** → Easy to extend with new tools or datasets.  
+Agents bring modularity, autonomy, and scalability to enterprise data workflows. Here's why they work:
+
+- 🧠 **Autonomy** → Each agent handles a specialized task  
+- ⚙️ **Scalability** → Supports sequential, parallel, and loop execution  
+- 📈 **Traceability** → Logs, metrics, and memory snapshots  
+- 🔌 **Flexibility** → Easy to extend with new tools or datasets  
 
 ---
 
 ## 🏗️ What We Created
-We designed a **multi-agent system** with four core agents:
+We built a **multi-agent pipeline** with four core agents:
 
-- **Agent 1: Data Loader** → Loads and prepares the dataset.  
-- **Agent 2: KPI Analyzer** → Computes metrics like total sales, missing values, top categories.  
-- **Agent 3: LLM Summary Generator** → Uses Gemini to generate human-readable summaries.  
-- **Agent 4: Chart Generator** → Visualizes KPIs with bar charts and line graphs.  
+| Agent | Role | Icon |
+|-------|------|------|
+| 🟧 **Agent 1: Data Loader** | Loads and prepares the dataset | 📊 |
+| 🟩 **Agent 2: KPI Analyzer** | Computes metrics like total sales, missing values, top categories | 🧠 |
+| 🟪 **Agent 3: LLM Summary Generator** | Uses Gemini to generate human-readable summaries | 📄 |
+| 🟥 **Agent 4: Chart Generator** | Visualizes KPIs with bar charts and line graphs | 📈 |
 
-Agents communicate using an **A2A protocol**, and the pipeline supports **sequential, parallel, and loop execution**.  
-We added **observability (logging, metrics)** and **memory (state persistence)** to make the system reliable and production-ready.
+Agents communicate using an **A2A protocol**, and the system supports **sequential**, **parallel**, and **loop** execution. We added **observability** and **memory persistence** to make the system reliable and production-ready.
 
 ---
 
-## 🎥 Demo
+## 🎥 Demo Modes
 The pipeline runs end-to-end in three modes:
-- **Sequential mode** → Agents pass outputs step-by-step.  
-- **Parallel mode** → KPI analysis and charting run simultaneously.  
-- **Loop mode** → KPI analysis re-runs until missing values are resolved.  
 
+- 🔁 **Sequential Mode** → Agents pass outputs step-by-step  
+- ⚡ **Parallel Mode** → KPI analysis and charting run simultaneously  
+- 🔄 **Loop Mode** → KPI analysis re-runs until missing values are resolved  
 
-## 🧠 Architecture Diagram for the multi-agent workflow
-
-<img width="1536" height="1024" alt="A full-size colorful" src="https://github.com/user-attachments/assets/ad19c131-ce30-4124-b869-61b0769a079c" />
-
-- Agent 1: Data Loader → 📊 Table icon (loads dataset)
-- Agent 2: KPI Analyzer → 🧠 Brain icon (computes KPIs)
-- Agent 3: LLM Summary → 📄 Document icon (Gemini-powered summaries)
-- Agent 4: Chart Generator → 📈 Bar/line chart icon (visualizes KPIs
+Each run produces:
+- ✅ KPI metrics  
+- ✅ Gemini-powered summaries  
+- ✅ Visual charts  
+- ✅ Logs and memory snapshots
 
 ---
 
-## 🛠️ The Build
-**Technologies & Tools:**
-- Python (Kaggle Notebook)  
-- Pandas, NumPy → Data processing  
-- Matplotlib, Plotly → Chart generation  
-- Gemini API → LLM summaries  
-- Custom tools → Data loader, KPI analyzer, chart generator  
-- Memory store → Persist KPIs and summaries  
-- Logging & metrics → Observability  
-- A2A protocol → Agent-to-agent communication  
-- Deployment pipeline → Run in production-like mode  
+## 🧠 Architecture Diagram
 
+<img width="100%" alt="Multi-Agent Architecture Diagram" src="https://github.com/user-attachments/assets/ad19c131-ce30-4124-b869-61b0769a079c" />
+
+---
+
+## 🛠️ Technologies & Tools
+
+| Category | Tools |
+|---------|-------|
+| Language | Python (Kaggle Notebook) |
+| Data Processing | Pandas, NumPy |
+| Visualization | Matplotlib, Plotly |
+| LLM Integration | Gemini API |
+| Custom Tools | Data Loader, KPI Analyzer, Chart Generator |
+| Observability | Logging, Metrics |
+| Memory | State Persistence |
+| Communication | A2A Protocol |
+| Deployment | Production-ready pipeline |
+
+---
+
+## 🔐 Security Note
+All API keys (e.g., Google AI Studio) are securely managed using **Kaggle Secrets**.  
+No keys are hardcoded in the notebook or repository. Access is handled via environment variables like `os.environ["GOOGLE_API_KEY"]`.
+
+---
+
+
+---
+
+## 🔮 If I Had More Time
+- Add **OpenAPI tools** for external data access  
+- Implement **context compaction** for memory optimization  
+- Deploy to **Cloud Run or Docker** for real-time use  
+- Extend to support **multiple datasets** and **custom KPI definitions**
+
+---
+
+## 👨‍💻 Author
+**Sukhman Singh**  
+Final-year MCA student at GNA University (Graduating 2026)  
+Focused on full-stack, data science, and AI projects  
