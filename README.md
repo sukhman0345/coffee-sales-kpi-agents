@@ -43,15 +43,15 @@ The pipeline runs end-to-end in three modes:
 - **Parallel mode** → KPI analysis and charting run simultaneously.  
 - **Loop mode** → KPI analysis re-runs until missing values are resolved.  
 
-Outputs include:
-- KPIs (e.g., total sales, missing values)  
-- LLM summaries (Gemini-powered)  
-- Visual charts (bar/line graphs)  
-- Logs and memory snapshots  
 
+## 🧠 Architecture Diagram for the multi-agent workflow
 
-<img width="1344" height="768" alt="thumbnail" src="https://github.com/user-attachments/assets/fb5b81cb-b407-4348-860b-1532863f7a67" />
+<img width="1536" height="1024" alt="A full-size colorful" src="https://github.com/user-attachments/assets/ad19c131-ce30-4124-b869-61b0769a079c" />
 
+- Agent 1: Data Loader → 📊 Table icon (loads dataset)
+- Agent 2: KPI Analyzer → 🧠 Brain icon (computes KPIs)
+- Agent 3: LLM Summary → 📄 Document icon (Gemini-powered summaries)
+- Agent 4: Chart Generator → 📈 Bar/line chart icon (visualizes KPIs
 
 ---
 
@@ -67,6 +67,3 @@ Outputs include:
 - A2A protocol → Agent-to-agent communication  
 - Deployment pipeline → Run in production-like mode  
 
----
-
-## 📂 Project Structure
