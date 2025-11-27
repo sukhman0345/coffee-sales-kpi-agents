@@ -63,7 +63,7 @@ Each run produces:
 
 ## 🧠 Architecture Diagram
 
-<img width="1536" height="1024" alt="Architecture diagram" src="https://github.com/user-attachments/assets/18c4f73d-0547-400f-ba15-701882874612" />
+<img width="1000" height="1000" alt="Architecture diagram" src="https://github.com/user-attachments/assets/18c4f73d-0547-400f-ba15-701882874612" />
 
 ---
 
