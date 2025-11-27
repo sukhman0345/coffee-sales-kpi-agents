@@ -63,7 +63,7 @@ Each run produces:
 
 ## 🧠 Architecture Diagram
 
-<img width="100%" alt="Multi-Agent Architecture Diagram" src="https://github.com/user-attachments/assets/ad19c131-ce30-4124-b869-61b0769a079c" />
+<img width="1536" height="1024" alt="Architecture diagram" src="https://github.com/user-attachments/assets/18c4f73d-0547-400f-ba15-701882874612" />
 
 ---
 
